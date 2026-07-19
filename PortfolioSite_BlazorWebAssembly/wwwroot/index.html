@@ -11,9 +11,12 @@
         https://skmyt68.github.io/Portfolio/
 
         そして、/docsを指定しているので、Portfolio/docs/index.htmlとすれば、読み込みができる
+        github pages用 
+        <base href="/Portfolio/" />
+
 
      -->
-    <base href="/Portfolio/" />
+    <base href="/" />
 
     <link rel="preload" id="webassembly" />
     <link rel="stylesheet" href="css/app.css" />
@@ -24,7 +27,7 @@
 
 <body>
 
-    <!--Loading画面の処理-->
+    <!--Loading画面の処理 programs.csのbuilder.rootcomponent<app>をここで描画する -->
     <div id="app">
         <svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />

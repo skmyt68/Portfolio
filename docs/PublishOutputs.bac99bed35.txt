@@ -1,0 +1,4 @@
+C:\Users\YutaSakuma\source\repos\skmyt68\Dev-Portfolio\PortfolioSite_BlazorWebAssembly\bin\Release\net10.0\publish\wwwroot\index.html
+C:\Users\YutaSakuma\source\repos\skmyt68\Dev-Portfolio\PortfolioSite_BlazorWebAssembly\bin\Release\net10.0\publish\PortfolioSite_WebAssemblyBlazor.runtimeconfig.json
+C:\Users\YutaSakuma\source\repos\skmyt68\Dev-Portfolio\PortfolioSite_BlazorWebAssembly\bin\Release\net10.0\publish\dotnet.js
+C:\Users\YutaSakuma\source\repos\skmyt68\Dev-Portfolio\PortfolioSite_BlazorWebAssembly\bin\Release\net10.0\publish\web.config
