@@ -5,7 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortfolioSite_WebAssemblyBlazor</title>
-    <base href="/" />
+    <!--
+        <base href="/" /> アプリケーションのルートURL Portfolioリポジトリの
+        webAssemblyの場合はindex.htmlがdefault githubPagesは以下をルートにしている
+        https://skmyt68.github.io/Portfolio/
+
+        そして、/docsを指定しているので、Portfolio/docs/index.htmlとすれば、読み込みができる
+
+     -->
+    <base href="/Portfolio/" />
+
     <link rel="preload" id="webassembly" />
     <link rel="stylesheet" href="css/app.css" />
     <!-- If you add any scoped CSS files, uncomment the following to load them
@@ -14,6 +23,8 @@
 </head>
 
 <body>
+
+    <!--Loading画面の処理-->
     <div id="app">
         <svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />
@@ -27,6 +38,9 @@
         <a href="." class="reload">Reload</a>
         <span class="dismiss">🗙</span>
     </div>
+
+    <!-- JavaScript→Blazor WebAssembly→.Net Runtimeロード → DLLロード-->
+    <!-- Blazor起動用のjsファイル-->
     <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
 </body>
 
