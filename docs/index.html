@@ -5,15 +5,24 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PortfolioSite_WebAssemblyBlazor</title>
+    <!--
+        <base href="/" /> アプリケーションのルートURL Portfolioリポジトリの
+        webAssemblyの場合はindex.htmlがdefault githubPagesは以下をルートにしている
+        https://skmyt68.github.io/Portfolio/
+
+        そして、/docsを指定しているので、Portfolio/docs/index.htmlとすれば、読み込みができる
+
+     -->
     <base href="/Portfolio/" />
-    <link href="_framework/dotnet.n1yams38ii.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-28Cu2cCsp9BLaAR2b7oH7ZOD+9WJbckeMilxI5cQQK0=" />
+
+    <link href="_framework/dotnet.4hwi1rue7l.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-GD6T6lOqxzeFi0gq0AlU5ViLsFuV/q8T75PGsxjipTY=" />
     <link rel="stylesheet" href="css/app.css" />
     <!-- If you add any scoped CSS files, uncomment the following to load them
     <link href="PortfolioSite_WebAssemblyBlazor.styles.css" rel="stylesheet" /> -->
     <script type="importmap">{
   "imports": {
     "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
-    "./_framework/dotnet.js": "./_framework/dotnet.n1yams38ii.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.4hwi1rue7l.js",
     "./_framework/dotnet.native.js": "./_framework/dotnet.native.puryxhmhq9.js",
     "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.web2r9gqbh.js"
   },
@@ -21,8 +30,8 @@
   "integrity": {
     "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
     "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
-    "./_framework/dotnet.js": "sha256-28Cu2cCsp9BLaAR2b7oH7ZOD+9WJbckeMilxI5cQQK0=",
-    "./_framework/dotnet.n1yams38ii.js": "sha256-28Cu2cCsp9BLaAR2b7oH7ZOD+9WJbckeMilxI5cQQK0=",
+    "./_framework/dotnet.4hwi1rue7l.js": "sha256-GD6T6lOqxzeFi0gq0AlU5ViLsFuV/q8T75PGsxjipTY=",
+    "./_framework/dotnet.js": "sha256-GD6T6lOqxzeFi0gq0AlU5ViLsFuV/q8T75PGsxjipTY=",
     "./_framework/dotnet.native.js": "sha256-gQbHHzCnWx8iDOC65EKbql7bEltJkfao7lmkAbIRajw=",
     "./_framework/dotnet.native.puryxhmhq9.js": "sha256-gQbHHzCnWx8iDOC65EKbql7bEltJkfao7lmkAbIRajw=",
     "./_framework/dotnet.runtime.js": "sha256-SOUHEQ3FhDAibBSR2u90NWZpoBjPuWRmH0BAATUlhJU=",
@@ -32,6 +41,8 @@
 </head>
 
 <body>
+
+    <!--Loading画面の処理-->
     <div id="app">
         <svg class="loading-progress">
             <circle r="40%" cx="50%" cy="50%" />
@@ -45,6 +56,9 @@
         <a href="." class="reload">Reload</a>
         <span class="dismiss">🗙</span>
     </div>
+
+    <!-- JavaScript→Blazor WebAssembly→.Net Runtimeロード → DLLロード-->
+    <!-- Blazor起動用のjsファイル-->
     <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
 </body>
 
