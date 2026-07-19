@@ -1,0 +1,75 @@
+# =========================
+# Visual Studio
+# =========================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Build output
+# =========================
+[Bb]in/
+[Oo]bj/
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+
+# =========================
+# .NET
+# =========================
+project.lock.json
+*.dll
+*.exe
+*.pdb
+
+# =========================
+# Secrets / Environment
+# =========================
+.env
+.env.*
+
+# Local configuration
+**/appsettings.Development.json
+**/appsettings.Local.json
+
+# User secrets
+secrets.json
+
+# Connection strings
+**/*ConnectionString*
+**/*connectionstring*
+
+# =========================
+# OS
+# =========================
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Node (Blazor CSS/JS tooling)
+# =========================
+node_modules/
+
+# =========================
+# Publish output
+# =========================
+publish/
+PublishOutput/
+
+# =========================
+# IDE
+# =========================
+.idea/
+.vscode/
